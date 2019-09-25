@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+const port = process.env.PORT || 3000
 
 // Enable HTML template middleware
 app.engine('html', require('ejs').renderFile);
@@ -13,7 +14,7 @@ app.get('/', function (req, res) {
 });
 
 //start a server on port 80 and log its start to our console
-var server = app.listen(3000, function () {
+var server = app.listen(port, function () {
 
   var port = server.address().port;
   console.log('Example app listening on port ', port);
