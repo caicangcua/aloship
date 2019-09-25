@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000
 // Enable HTML template middleware
 app.engine('html', require('ejs').renderFile);
 
+app.use(express.static(__dirname));
 // Enable static CSS styles
 app.use(express.static('styles'));
 
