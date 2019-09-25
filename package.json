@@ -7,21 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/balena-io-projects/simple-server-node.git"
-  },
-  "keywords": [
-    "webserver",
-    "nodejs",
-    "expressjs"
-  ],
   "author": "Shaun Mulligan <shaun@balena.io>",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/balena-io-projects/simple-server-node/issues"
-  },
-  "homepage": "https://github.com/balena-io-projects/simple-server-node#readme",
   "dependencies": {
     "express": "*",
     "ejs": "*"
